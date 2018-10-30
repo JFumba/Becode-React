@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import data from './movie.json'; 
 import './App.css';
 
@@ -11,10 +11,10 @@ class App extends React.Component {
         <div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/movies">Movies</Link>
+              <NavLink to="/movies">Movies</NavLink>
             </li>
           </ul>
  
